@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+<center>
+                
+        <form action="{{ url_for('predict')}}" method="post" >
+                <h1 class="card-title"> Car Price Prediction </h1>
+            <h3>Year</h3>
+            <input id="first" name="Year"  style="width: 300px"  type="number ">
+            <h3 style="color:black">What is the Showroom Price?(In lakhs)</h3><input id="second"  style="width: 300px"  name="Present_Price" required="required">
+            <h3 style="color:black">How Many Kilometers Drived?</h3><input id="third"  style="width: 300px"  name="Kms_Driven" required="required">
+            <h3 style="color:black">How much owners previously had the car(0 or 1 or 3) ?</h3><input id="fourth"  style="width: 300px"  name="Owner" required="required">
+            <div class="container-sm border">
+            <h3 style="color:black">What Is the Fuel type?</h3><select style="width: 300px" name="Fuel_Type_Petrol" id="fuel" required="required">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Diesel">CNG</option>
+            </select></div>
+            <h3 style="color:black">Are you A Dealer or Individual</h3><select name="Seller_Type_Individual"  style="width: 300px" id="resea" required="required">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select>
+            <h3 style="color:black">Transmission type</h3><select name="Transmission_Mannual"  style="width: 300px"  id="research" required="required">
+                <option value="Mannual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select>
+           <br> <br><br><button id="sub"    type="submit ">Calculate the Selling Price</button>
+
+  </div>
+       <br>  <br><h3>{{ prediction_text }}<h3>
+      </div>  
+        </form>
+        
+</center>
+        
+        </body>
+
+
+
+
+
+    <style>
+        body {
+        background-image: url({{url_for('static',filename='2.webp')}});
+        background-size:cover;
+        padding: 0px;
+        }
+        form{
+  background-color:#fcf4dd;
+
+  width:500px;
+   padding-bottom: 50px;
+   padding-top:30px;
+
+}
+        
+        #research {
+            font-size: 16px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        
+        #fuel {
+            width: 83px;
+            height: 45px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+        
+        #fuel:hover {
+            background-color: darkcyan;
+        }
+        
+        #research {
+            width: 99px;
+            height: 45px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: darkcyan;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 45px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: darkcyan;
+        }
+        
+        #sub {
+            width: 350px;
+            height: 45px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
