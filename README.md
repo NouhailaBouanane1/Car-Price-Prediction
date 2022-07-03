@@ -22,8 +22,8 @@ and mse of 0.52 far better than others.I had use quantilTransformer to solve the
 
 
 
-
 ## Screenshots of the app
+![](Screenshot_Images/Screenshot%20(799).png)
 
 ## How to run the app
 - Open anaconda powershell
