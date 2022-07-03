@@ -36,10 +36,12 @@ and mse of 0.52 far better than others.I had use quantilTransformer to solve the
 
 ## Screenshot 
 
-- The first 10 rows of the dataset
+- **The first 10 rows of the dataset:**
+
 ![](Screenshot_Images/Screenshot%20(798).png)
 
-- The correlation between features.
+- **The correlation between features:**
+
 ![](Screenshot_Images/Screenshot%20(797).png)
 
 ## Workflow
