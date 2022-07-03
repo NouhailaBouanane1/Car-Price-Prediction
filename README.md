@@ -24,6 +24,8 @@ and mse of 0.52 far better than others.I had use quantilTransformer to solve the
 
 ## Screenshots of the app
 ![](Screenshot_Images/Screenshot%20(799).png)
+![](Screenshot_Images/Screenshot%20(800).png)
+
 
 ## How to run the app
 - Open anaconda powershell
@@ -31,10 +33,14 @@ and mse of 0.52 far better than others.I had use quantilTransformer to solve the
 - Activate the environment using: conda activate myenv
 - Install all the required packages using: pip install packages
 - Run the app using: python app.py
+
 ## Screenshot 
 
 - The first 10 rows of the dataset
+![](Screenshot_Images/Screenshot%20(798).png)
+
 - The correlation between features.
+![](Screenshot_Images/Screenshot%20(797).png)
 
 ## Workflow
 ### Data Collection: 
